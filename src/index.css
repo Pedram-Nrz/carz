@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'vazirmatn';
+  src: url('/fonts/vazirmatn.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+/* Price-Nav-Loop CSS */
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+}
+  
+.scrolling {
+    animation: scrolling 30s linear infinite;
+}
+  
+.scrolling:hover {
+    animation-play-state: paused;
+}
+
+
+  
+.ltr {
+    direction: ltr;
+  }
+ 
+.rtl {
+    direction: rtl;
+  }
+  
+.nav-item {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    min-width: 12rem;
+}
+  
+.btn-small {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+  
+.btn-cta {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+}
+  
+.group:hover .dropdown-content {
+    display: block;
+}
+  
+
+  
